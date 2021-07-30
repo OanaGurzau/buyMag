@@ -1,0 +1,47 @@
+<div class="register-page">
+  <div class="register-content">
+    <div class="register-header">
+      <i class="fas fa-user register-icon"><span class="register-text">Register</span></i>
+    </div>
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input 
+        type="text" 
+        id="username" 
+        class="form-input" 
+        name="username"
+        ngModel
+        required>
+      </div>
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input 
+        type="text" 
+        id="username" 
+        class="form-input"
+        name="email"
+        ngModel
+        required
+        email>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+        type="password" 
+        id="password" 
+        class="form-input"
+        name="password"
+        ngModel
+        minlength="6"
+        required
+        >
+      </div>
+      <hr>
+      <div class="bottom-register-buttons">
+        <button class="btn btn-register" type="submit" [disabled]="!registerForm.valid">Register</button>
+        <a routerLink="../login" routerLinkActive="active"><p class="register">Login</p></a>
+      </div>
+    </form>
+  </div>
+</div>

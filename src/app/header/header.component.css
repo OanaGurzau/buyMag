@@ -1,0 +1,36 @@
+.header{
+  padding: 15px;
+  background-color: #373a39;
+}
+
+.header-content{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+p.date{
+  color:#a2aaaf;
+  font-weight: 700;
+}
+
+span.hour{
+  color: #a2aaaf;
+  font-weight: normal;
+}
+
+.user-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 6px;
+}
+
+.active{
+  background-color: #a2aaaf;
+  color:#373a39;
+  padding: 6px;
+  border-radius: 10px;
+
+}
+

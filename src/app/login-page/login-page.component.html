@@ -1,0 +1,23 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="login-page">
+  <div class="login-content">
+    <div class="login-header">
+      <i class="fas fa-user login-icon"><span class="login-text">Login</span></i>
+    </div>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" class="form-input" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" min-length="6" class="form-input" ngModel required>
+      </div>
+      <hr>
+      <div class="bottom-login-buttons">
+        <button class="btn btn-login" type="submit" [disabled]="!loginForm.valid">Login</button>
+        <a routerLink="../register"><p class="register">Register</p></a>
+      </div>
+    </form>
+  </div>
+</div>
