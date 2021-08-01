@@ -9,7 +9,7 @@
         <label for="username">Username</label>
         <input type="text" name="username" id="username" class="form-input" ngModel required>
       </div>
-      <div class="form-group">
+      <div class="form-group"> 
         <label for="password">Password</label>
         <input type="password" name="password" id="password" min-length="6" class="form-input" ngModel required>
       </div>
@@ -21,3 +21,8 @@
     </form>
   </div>
 </div>
+
+<!-- testing afisarea de useri --> 
+<li *ngFor="let user of users">
+    <span class="badge">{{user.id}}</span> {{user.name}}
+    </li>
