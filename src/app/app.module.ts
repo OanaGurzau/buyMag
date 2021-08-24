@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     HeaderComponent,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
